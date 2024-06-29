@@ -1,5 +1,11 @@
-# Example
+num1=int(input(10)
+num2=int(input(5)
 num1 = 10
 num2 = 5
-result = num1 - num2
-print("Subtraction of 10 and 5:", result)
+sub = num1 - num2
+print("The Subtraction of",num1 ,"and",num2 ,"is", sub)
+
+
+
+
+
