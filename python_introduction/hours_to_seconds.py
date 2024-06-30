@@ -1,8 +1,8 @@
 # Python Program to Convert hours to seconds
  
 def convert(hours):
-    hours = (hours* 3600)
-    return hours
+    seconds = hours * 3600
+    return seconds
      
 # Driver program
 hours = 2
