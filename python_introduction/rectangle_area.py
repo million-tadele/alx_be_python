@@ -1,5 +1,5 @@
 # Function to calculate the area using simple multiplication
-def Area (length, width):
+def Area (length, width):'area = length * width'
 	return length * width
 
 # Example usage:
