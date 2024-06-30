@@ -8,10 +8,10 @@ def simple_interest(P,T,R):
     print('rate  =',R)
     print('time  =', T)
      
-    I = (P * R * T)
+    interest = (P * R * T)
      
-    print('The simple interest is:', I)
-    return I
+    print('The simple interest is:', interest)
+    return interest
      
 # Driver code
 simple_interest(1000, 3, 0.05)
