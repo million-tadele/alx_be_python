@@ -3,15 +3,15 @@
 # rate of interest.
  
  
-def simple_interest(p,t,r):
-    print('The principal =', p)
-    print('The time period =', t)
-    print('The rate of interest =',r)
+def simple_interest(P,T,R):
+    print('The principal =', P)
+    print('The time period =', T)
+    print('The rate of interest =',R)
      
-    si = (p * t * r*100)/100
+    I = (P * R * T)
      
-    print('The Simple Interest is:', si)
-    return si
+    print('The Simple Interest is:', I)
+    return I
      
 # Driver code
 simple_interest(1000, 3, 0.05)
