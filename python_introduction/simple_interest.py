@@ -8,10 +8,10 @@ def simple_interest(p,t,r):
     print('The time period =', t)
     print('The rate of interest =',r)
      
-    si = (p * t * r)/100
+    si = (p * t * r*100)/100
      
     print('The Simple Interest is:', si)
     return si
      
 # Driver code
-simple_interest(1000, 3, 5)
+simple_interest(1000, 3, 0.05)
