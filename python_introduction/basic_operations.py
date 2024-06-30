@@ -1,11 +1,11 @@
 # Python3 program to add two numbers
-num1 = 15
-num2 = 12
+number1 = 15
+number2 = 12
 
 # Adding two nos
-sum = num1 + num2
+sum = number1 + number2
 
 # printing values
-print("Addition of", num1, "and", num2 , "is", sum)
+print("Addition of", number1, "and", number2 , "is", sum)
 
 
