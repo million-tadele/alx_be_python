@@ -4,13 +4,13 @@
  
  
 def simple_interest(P,T,R):
-    print('The principal =', P)
-    print('The time period =', T)
-    print('The rate of interest =',R)
+    print('principal =', P)
+    print('rate  =',R)
+    print('time  =', T)
      
     I = (P * R * T)
      
-    print('The Simple Interest is:', I)
+    print('The simple interest is:', I)
     return I
      
 # Driver code
