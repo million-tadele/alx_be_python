@@ -3,7 +3,7 @@
 # rate of interest.
  
  
-def simple_interest(P,T,R):
+def simple_interest(P,R,T):
     print('principal =', P)
     print('rate  =',R)
     print('time  =', T)
@@ -14,4 +14,4 @@ def simple_interest(P,T,R):
     return interest
      
 # Driver code
-simple_interest(1000, 3, 0.05)
+simple_interest(1000, 0.05, 3)
