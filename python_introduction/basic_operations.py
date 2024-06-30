@@ -1,19 +1,11 @@
-num1=int(input(10))
-num2=int(input(5))
-num1 = 10
-num2 = 5
-Add = num1 + num2
-print("The Addition of",num1 ,"and",num2 ,"is", Add)
+# Python3 program to add two numbers
+num1 = 15
+num2 = 12
 
+# Adding two nos
+sum = num1 + num2
 
-
-
-
-sub = num1 - num2
-print("The Subtraction of",num1 ,"and",num2 ,"is", sub)
-
-Add = num1 + num2
-print("The Addition of",num1 ,"and",num2 ,"is", Add)
-
+# printing values
+print("Addition of", num1, "and", num2 , "is", sum)
 
 
