@@ -14,4 +14,4 @@ def simple_interest(p,t,r):
     return si
      
 # Driver code
-simple_interest(1000, 3, 0.05)
+simple_interest(1000, 3, 5)
