@@ -1,4 +1,4 @@
-'How old are you?'
+# How old are you?
 mycurrentage = 27
 currentyear = 2023
 year = 2050
