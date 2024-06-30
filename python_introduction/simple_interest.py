@@ -1,17 +1,12 @@
+
 # Python3 program to find simple interest
-# for given principal amount, time and
-# rate of interest.
- 
- 
-def simple_interest(P,R,T):
-    print('principal =', P)
-    print('rate  =',R)
-    print('time  =', T)
+
+def interest(P,R,T):simple_interset
+p =1000
+r =0.05
+t =3
      
-    interest = (P * R * T)
+interest = (p * r * t)
      
-    print('The simple interest is:', interest)
-    return interest
-     
-# Driver code
-simple_interest(1000, 0.05, 3)
+print('The simple interest is:', interest)
+    
