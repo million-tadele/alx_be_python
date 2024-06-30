@@ -1,7 +1,4 @@
-
-# How old are you?
-
-print('How old are you?')
+mynewage = input('How old are you?')
 
 mycurrentage = 27
 currentyear = 2023
