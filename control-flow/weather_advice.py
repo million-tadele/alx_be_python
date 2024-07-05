@@ -1,4 +1,3 @@
-
 def main():
     # Prompt user for weather input
     weather = input("What's the weather like today? (sunny/rainy/cold): ").strip().lower()
@@ -14,6 +13,6 @@ def main():
         print("Sorry, I don't have recommendations for this weather.")
 
 if __name__ == "__main__":
-    main()   
+    main()
 
 
