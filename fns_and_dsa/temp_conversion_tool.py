@@ -1,36 +1,26 @@
-# temp_conversion_tool.py
+# Prompt the user to input a temperature in the format (e.g., 45F, 102C, etc.)
+temp = input("Input the temperature you like to convert? (e.g., 45F, 102C etc.) : ")
 
-# Define global conversion factors
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+# Extract the numerical part of the temperature and convert it to an integer
+degree = int(temp[:-1])
 
-def convert_to_celsius(fahrenheit):
-    """Convert Fahrenheit to Celsius using the global conversion factor."""
-    celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
-    return celsius
+# Extract the convention part of the temperature input (either 'C' or 'F')
+i_convention = temp[-1]
 
-def convert_to_fahrenheit(celsius):
-    """Convert Celsius to Fahrenheit using the global conversion factor."""
-    fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
-    return fahrenheit
+# Check if the input convention is in uppercase 'C' (Celsius)
+if i_convention.upper() == "C":
+    # Convert the Celsius temperature to Fahrenheit
+    result = int(round((9 * degree) / 5 + 32))
+    o_convention = "Fahrenheit"  # Set the output convention as Fahrenheit
+# Check if the input convention is in uppercase 'F' (Fahrenheit)
+elif i_convention.upper() == "F":
+    # Convert the Fahrenheit temperature to Celsius
+    result = int(round((degree - 32) * 5 / 9))
+    o_convention = "Celsius"  # Set the output convention as Celsius
+else:
+    # If the input convention is neither 'C' nor 'F', print an error message and exit the program
+    print("Input proper convention.")
+    quit()
 
-def main():
-    try:
-        temperature = float(input("Enter the temperature to convert: "))
-    except ValueError:
-        raise ValueError("Invalid temperature. Please enter a numeric value.")
-
-    unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
-
-    if unit == "C":
-        converted_temperature = convert_to_fahrenheit(temperature)
-        print(f"{temperature}°C is {converted_temperature:.2f}°F")
-    elif unit == "F":
-        converted_temperature = convert_to_celsius(temperature)
-        print(f"{temperature}°F is {converted_temperature:.2f}°C")
-    else:
-        print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
-
-if __name__ == "__main__":
-    main()
-
+# Display the converted temperature in the specified output convention
+print("The temperature in", o_convention, "is", result, "degrees.") 
