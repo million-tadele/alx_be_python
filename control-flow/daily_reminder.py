@@ -31,7 +31,7 @@ def main():
             reminder_message = "Invalid priority entered. Please choose from high, medium, or low."
 
     # Print the customized reminder message
-    print("\nReminder:", reminder_message)
+    print("\nReminder:"that requires immediate attention today!'', reminder_message)
 
 if __name__ == "__main__":
     main()
