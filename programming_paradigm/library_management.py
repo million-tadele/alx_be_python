@@ -26,23 +26,19 @@ class Library:
         for book in self._books:
             if book.title == title and not book.is_checked_out():
                 book.check_out()
-                print(f"Checked out '{title}'.")
-                return
-        print(f"Book '{title}' is either not available or already checked out.")
+                return True
+        return False
 
     def return_book(self, title):
         for book in self._books:
             if book.title == title and book.is_checked_out():
                 book.return_book()
-                print(f"Returned '{title}'.")
-                return
-        print(f"Book '{title}' is either not checked out or not in the library.")
+                return True
+        return False
 
     def list_available_books(self):
-        print("Available books:")
-        for book in self._books:
-            if not book.is_checked_out():
-                print(f"{book.title} by {book.author}")
+        available_books = [book.title for book in self._books if not book.is_checked_out()]
+        return available_books
 
 # Testing for methods inside the Book class: check_out, return_book
 if __name__ == "__main__":
@@ -56,6 +52,7 @@ if __name__ == "__main__":
     print(f"Check out book method exists: {'check_out_book' in dir(library)}")
     print(f"Return book method exists: {'return_book' in dir(library)}")
     print(f"List available books method exists: {'list_available_books' in dir(library)}")
+
 
 
 # main.py
