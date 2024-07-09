@@ -44,6 +44,7 @@ class Library:
             if not book.is_checked_out():
                 print(f"{book.title} by {book.author}")
 
+
 # main.py
 
 from library_management import Book, Library
