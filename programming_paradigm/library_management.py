@@ -44,20 +44,18 @@ class Library:
             if not book.is_checked_out():
                 print(f"{book.title} by {book.author}")
 
-# Checking for methods inside the Book class: check_out, return_book
+# Testing for methods inside the Book class: check_out, return_book
 if __name__ == "__main__":
-    print("Checking for Methods inside the Book Class:")
     book = Book("Title", "Author")
     print(f"Check out method exists: {'check_out' in dir(book)}")
     print(f"Return book method exists: {'return_book' in dir(book)}")
 
-    print("\nChecking for Methods inside the Library Class:")
+# Testing for methods inside the Library class: add_book, check_out_book, return_book, list_available_books
     library = Library()
     print(f"Add book method exists: {'add_book' in dir(library)}")
     print(f"Check out book method exists: {'check_out_book' in dir(library)}")
     print(f"Return book method exists: {'return_book' in dir(library)}")
     print(f"List available books method exists: {'list_available_books' in dir(library)}")
-
 
 
 # main.py
