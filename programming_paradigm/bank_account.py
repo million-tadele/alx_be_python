@@ -15,7 +15,7 @@ class BankAccount:
             return False
 
     def display_balance(self):
-        print(f"Current Balance: ${self.account_balance}")
+        print(f"Current Balance: ${self.account_balance:.2f}")
 
 if __name__ == "__main__":
     # Example usage
@@ -40,10 +40,10 @@ def main():
 
     if command == "deposit" and amount is not None:
         account.deposit(amount)
-        print(f"Deposited: ${amount}")
+        print(f"Deposited: ${amount:.2f}")
     elif command == "withdraw" and amount is not None:
         if account.withdraw(amount):
-            print(f"Withdrew: ${amount}")
+            print(f"Withdrew: ${amount:.2f}")
         else:
             print("Insufficient funds.")
     elif command == "display":
@@ -53,4 +53,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
