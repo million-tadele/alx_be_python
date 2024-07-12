@@ -17,6 +17,7 @@ def convert_to_celsius(fahrenheit):
     Returns:
         float: The temperature converted to Celsius.
     """
+    global FAHRENHEIT_TO_CELSIUS_FACTOR
     celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
     return celsius
 
@@ -33,6 +34,7 @@ def convert_to_fahrenheit(celsius):
     Returns:
         float: The temperature converted to Fahrenheit.
     """
+    global CELSIUS_TO_FAHRENHEIT_FACTOR
     fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
     return fahrenheit
 
@@ -55,4 +57,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
