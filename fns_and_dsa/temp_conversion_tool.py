@@ -1,9 +1,14 @@
 # temp_conversion_tool.py
 
+# Check if file exists and is not empty
+import os
+
+if not os.path.exists(__file__) or os.path.getsize(__file__) == 0:
+    raise ValueError("File does not exist or is empty.")
+
 # Define global conversion factors
-def global_conversion_factors:
-   FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-   CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius using the global conversion factor."""
