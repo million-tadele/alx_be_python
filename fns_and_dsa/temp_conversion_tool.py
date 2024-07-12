@@ -1,10 +1,8 @@
 # temp_conversion_tool.py
 
 # Define global conversion factors
-def FAHRENHEIT_TO_CELSIUS_FACTOR:
- FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-def CELSIUS_TO_FAHRENHEIT_FACTOR:
- CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9  # Factor to convert Fahrenheit to Celsius
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5  # Factor to convert Celsius to Fahrenheit
 
 def convert_to_celsius(fahrenheit):
     """
@@ -12,9 +10,6 @@ def convert_to_celsius(fahrenheit):
     
     Fahrenheit: A temperature scale where the freezing point of water is 32°F and the boiling point is 212°F.
     Celsius: A temperature scale where the freezing point of water is 0°C and the boiling point is 100°C.
-    
-    Global Conversion Factor:
-    FAHRENHEIT_TO_CELSIUS_FACTOR (5/9): The factor used to convert Fahrenheit to Celsius.
     
     Args:
         fahrenheit (float): The temperature in Fahrenheit.
@@ -31,9 +26,6 @@ def convert_to_fahrenheit(celsius):
     
     Celsius: A temperature scale where the freezing point of water is 0°C and the boiling point is 100°C.
     Fahrenheit: A temperature scale where the freezing point of water is 32°F and the boiling point is 212°F.
-    
-    Global Conversion Factor:
-    CELSIUS_TO_FAHRENHEIT_FACTOR (9/5): The factor used to convert Celsius to Fahrenheit.
     
     Args:
         celsius (float): The temperature in Celsius.
@@ -63,3 +55,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
