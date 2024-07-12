@@ -1,11 +1,5 @@
 # temp_conversion_tool.py
 
-# Check if file exists and is not empty
-import os
-
-if not os.path.exists(__file__) or os.path.getsize(__file__) == 0:
-    raise ValueError("File does not exist or is empty.")
-
 # Define global conversion factors
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
@@ -39,3 +33,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
